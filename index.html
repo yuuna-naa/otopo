@@ -159,9 +159,9 @@
   				margin: 0;
   			}
 
-  			.message #name img{
+  			.message #name {
   				text-align: right;
-  				margin: 0 0 0 auto;
+  				margin: -150px 0 0 auto;
   				padding: 20px;
   				padding-right: 5px;
   			}
@@ -176,6 +176,10 @@
   				border: 8px solid rgba(0, 0, 0, 0.5);
   				border-right: none;
   				background-color: #D9D9D9;
+  			}
+  			.message a{
+  				color: #fff;
+  				margin: 20px;
   			}
 
   			h3{
@@ -226,6 +230,7 @@
   				background-color: #ffffff;
   				font-size: 20px;
   				text-align: center;
+  				margin: 0;
   				padding: 15px 0;
   				border: 8px solid;
   				border-image: linear-gradient(to bottom, #CB9B0C, #FAF3BF, #987409,#EECD60, #654D06, #654D06) 1;
@@ -304,7 +309,7 @@
 
   		</style>
   		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  		<script type="text/javascript" src="js/header.js"></script>
+  		<script type="text/javascript" ></script>
   	</head>
 
   	<body>
@@ -328,70 +333,119 @@
   		</div>
 
   		<section id="gaiyou">
-  			<h2>まずは無料で<span>あなたの過去</span>を<br>占ってみませんか？</h2>
-  			<form action="kekka/index.html" method="GET">
-  				<p>ニックネーム<br>
-				<input type="text" name="nickname" class="e1"></p>
-				<p>生年月日<br>
-				<input type="text" name="era" class="e2">年
-				<select name="月">
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
+    <h2>まずは無料で<span>あなたの過去</span>を<br>占ってみませんか？</h2>
 
-				</select>月
-				<select name="日">
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
-					<option value="13">13</option>
-					<option value="14">14</option>
-					<option value="15">15</option>
-					<option value="16">16</option>
-					<option value="17">17</option>
-					<option value="18">18</option>
-					<option value="19">19</option>
-					<option value="20">20</option>
-					<option value="21">21</option>
-					<option value="22">22</option>
-					<option value="23">23</option>
-					<option value="24">24</option>
-					<option value="25">25</option>
-					<option value="26">26</option>
-					<option value="27">27</option>
-					<option value="28">28</option>
-					<option value="29">29</option>
-					<option value="30">30</option>
-					<option value="31">31</option>
-				</select>日</p>
-				<p>性別を選択<br>
-				<input id="male" type="radio" name="sex" value="male"><label for="male">男性</label>
-				<input id="female" type="radio" name="sex" value="female"><label for="female">女性</label></p>
-				<button type="submit" class="btn">無料鑑定</button>
-			</form>
-  			<!--<div class="btn"><a href="index.html">無料鑑定</a></div>-->
-  			<p class="attention">※鑑定に際してユーザーが入力された氏名・生年月日・相談内容などの個人情報は、鑑定以外の目的では一切使用いたしません。</p>
+    <form>
+        <p>ニックネーム<br>
+            <input type="text" name="nickname" class="e1" id="nickname-input">
+        </p>
+
+        <p>生年月日<br>
+            <input type="text" name="era" class="e2" id="era-input">年
+
+            <select name="月" id="month-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>月
+
+            <select name="日">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>日
+        </p>
+
+        <p>性別を選択<br>
+            <input id="male" type="radio" name="sex" value="male"><label for="male">男性</label>
+            <input id="female" type="radio" name="sex" value="female"><label for="female">女性</label>
+        </p>
+
+        <button type="button" class="btn" onclick="startDiagnosis()">無料鑑定</button>
+    </form>
+
+    <p class="attention">※鑑定に際してユーザーが入力された氏名・生年月日・相談内容などの個人情報は、鑑定以外の目的では一切使用いたしません。</p>
+</section>
+
+<script>
+    function startDiagnosis() {
+        // --- 1. 入力値を取得する ---
+        const nickname = document.getElementById('nickname-input').value; // 名前
+        const era = document.getElementById('era-input').value;         // 年
+        const month = document.getElementById('month-select').value;    // 月
+        
+        // 性別のチェック（ラジオボタンは書き方が少し特殊です）
+        // 「name="sex" の中でチェックがついているもの」を探します
+        const sex = document.querySelector('input[name="sex"]:checked');
 
 
-  		</section>
+        // --- 2. 入力チェック（バリデーション） ---
+
+        // もしニックネームが空っぽだったら
+        if (nickname === "") {
+            alert("ニックネームを入力してください！");
+            return; // ★ここで処理を強制終了させる（下の行には進まない）
+        }
+
+        // もし生まれた年が空っぽだったら
+        if (era === "") {
+            alert("生まれた年を入力してください！");
+            return; // 強制終了
+        }
+
+        // もし性別が選ばれていなかったら（sex変数が空だったら）
+        if (!sex) {
+            alert("性別を選択してください！");
+            return; // 強制終了
+        }
+
+
+        // --- 3. ここまで来たら全部OKなのでページ移動 ---
+        
+        // 遷移先のファイル名を作成 (例: kekka/result5.html)
+        const fileName = "kekka/result" + month + ".html";
+
+        // 移動を実行
+        window.location.href = fileName + "?nickname=" + nickname;
+    }
+</script>
   		<div id="zisseki">
   			<img src="img/Group3.png">
   			<img src="img/Group2.png">
@@ -401,6 +455,7 @@
   			<img src="img/maeda2.png">
   			<div id="name"><img src="img/name.png"></div>
   			<p id="profile">自身に残された“時”に気づき、<br>過去について研究を重ねる。<br>自らの“時”を視ることができる<br>希少な能力を用いて、<br>触れた人の中に眠る記憶を読み解きます。</p>
+  			<a href="maeda/index.html">前田についてもっと見る</a>
   			<h3>あなたの過去を占ってみませんか？</h3>
   			<p class="mes">プリビアス前田からのメッセージ</p>
   			<p class="mes">過去が失われた世界でも、<br>人は“どこから来た”という感覚を求めます。<br>私はただ、<br>あなたの中で静かに眠る“時”を拾い上げるだけです。<br>過去を思い出すことはできなくても、<br>自分という物語は取り戻すことができます。</p>
@@ -409,9 +464,9 @@
   		<div id ="osusume">
   			<h4>オススメの過去鑑定</h4>
   			<ul>
-  				<li><a href="index.html"><img src="img/osusume1.jpg"></a></li>
-  				<li><a href="kihon/index.html"><img src="img/osusume2.jpg"></a></li>
-  				<li><a href="sakkaichiran/index.html"><img src="img/osusume3.jpg"></a></li>
+  				<li><a href="soon/index.html"><img src="img/osusume1.jpg"></a></li>
+  				<li><a href="soon/index.html"><img src="img/osusume2.jpg"></a></li>
+  				<li><a href="soon/index.html"><img src="img/osusume3.jpg"></a></li>
   			</ul> 
   			<a href="all/index.html">もっと見る</a>
   		</div>
