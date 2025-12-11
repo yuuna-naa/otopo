@@ -7,7 +7,7 @@ header{
   	width: 100%;
   	padding: 20px 15px 5px;
   	top: 0;
-  	height: 100px;
+  	height: 70px;
   	z-index: 1000;
   	display: flex;
   	align-items: center;
@@ -25,7 +25,7 @@ header nav a{
             text-decoration: none;
             font-family: "Shipporighyth Mincho", serif;
             color: white;
-            background-color: #A33535;
+            background-color: #13325B;
             font-size: 20px;
             font-weight: bold;
             padding: 4px 10px;
@@ -38,8 +38,8 @@ header nav a{
             /* 立体感を出すためのグラデーション設定 */
 }
 
-header nav a #login{
-	color: #000;
+header nav #login{
+	color: #ffffff;
 	background-color: #A33535;
 }
 
@@ -56,7 +56,7 @@ footer ul{
 }
 
 footer li{
-	margin: 50px 0;
+	margin: 40px 0;
 }
 
 footer #sign{
@@ -97,5 +97,6 @@ footer #sign{
 
 p{
 	font-size: 12px;
+	font-weight: 500;
 	line-height: 20px;
 }
