@@ -9,36 +9,51 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Share:ital,wght@0,700;1,700&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+
 		<link rel="stylesheet" href="../css/style.css">
   		<style type="text/css">
   			
   			body{
   				padding: 0;
   				margin: 0;
-  				padding-top: 100px;
+  				padding-top: 65px;
   				font-family: "Shippori Mincho", serif;
   			}
   			
+
+  			#top img{
+  				width: 100%;
+  				vertical-align: bottom;
+   			}
+
+   			#top{
+  				margin: 0;
+  			}
 
   			#headerrogo img{
 				width: 50%;
 			}
 
-			h1{
-				font-size: 28px;
-				text-align: center;
-				margin: 70px;
-			}#hon{
-				margin-bottom: 50px;
+
+  			#easy{
+				background-color: #E3E3C0;
+				padding: 50px 40px 100px;
 			}
 
-			#kiyaku{
-				background-color: #0B122B;
-				color: #ffffff;
-				padding: 50px;
-				font-size: 12px;
+			#easy ul{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				font-size: 20px;
+				font-weight: 800;
 			}
 
+			#easy li{
+				margin: 0 0 50px;
+			}
+			#easy img{
+				width: 100%;
+			}
 
 
 
@@ -46,7 +61,29 @@
 
 
 			@media screen and (min-width: 1000px){
-				
+				main{
+					margin: -250px 34px 34px;
+				}
+
+				main h1{
+					font-size: 90px;
+					line-height: 108px;
+				}
+
+				main h2{
+					font-size: 48px;
+
+				}
+
+				#top img{
+					display: none;
+				}
+
+				section#gaiyou{
+					margin-top: 300px;
+				}
+
+
 			}
 
 			@media screen and (max-width: 1000px){
@@ -55,7 +92,7 @@
 
 
 
-	
+
 
   		</style>
   		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -66,17 +103,34 @@
   		<header>
   			<div id="headerrogo"><a href="../index.html"><img src="../img/image3.png"></a></div>
   		 	<nav>
-  				<a href="index.html" id="login">ログイン</a>
-  				<a href="kihon/index.html" classs="btn kaiinn">会員登録</a>
+  				<a href="../rogin/index.html" id="login">ログイン</a>
+  				<a href="../kaiin/index.html" classs="btn kaiinn">会員登録</a>
 		  	</nav>
 		  	<span id="menu"></span>	
   		</header>
-  		<div id="kiyaku">
-  		<h1>coming sooon</h1>
-  	</div>
- 	</body>
+
+  		<div id="top"><img src="../img/Group1_1.png"></div>
+
+  		<div id="easy">
+  			<ul>
+  				<li>かんたんログイン
+  					<p>登録した認証を選んでログインしてください。</p></li>
+  				<li>外部サービスで認証
+  				<img src="../img/G18.png"></li>
+  				<li>メールアドレスで認証
+  					<form>
+  						<p>メールアドレス<br>
+						<input type="text" name="mall" class="e1"></p></form>
+  				</li>
+  				<p>利用規約、プライバシーポリシーを承認の上、次に進んでください。</p>
+  			</ul>
+  			
+  		</div>
 
 
+
+
+  	</body>
 
   	<footer>
   		<div class="attention">
@@ -85,13 +139,12 @@
 		</div>
   		<nav>
   			<ul>
-  				<li class="btn"><a href="index.html">お問い合わせ</a></li>
-  				<li class="btn"><a href="index.html">よくある質問</a></li>
+  				<li class="btn"><a href="../soon/index.html">お問い合わせ</a></li>
+  				<li class="btn"><a href="../shitumon/index.html">よくある質問</a></li>
   				<li class="btn"><a href="../kiyaku/index.html">利用規約</a></li>
-  			</ul> 		
   		</nav>
   		<p><a href="../index.html"><img src="../img/image3.png"></a></p>
-  		<p id="sign">©︎2025 ito.sumita.nakamura<p/>
+  		<p id="sign">©︎2025 ito.sumita.nakamura</p>
   	</footer>
 
 </html>
