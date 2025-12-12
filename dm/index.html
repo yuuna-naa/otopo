@@ -9,70 +9,66 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Share:ital,wght@0,700;1,700&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-
 		<link rel="stylesheet" href="../css/style.css">
   		<style type="text/css">
   			
   			body{
   				padding: 0;
   				margin: 0;
-  				padding-top: 65px;
+  				padding-top: 50px;
   				font-family: "Shippori Mincho", serif;
   			}
   			
-  			#top{
-  				margin: 0;
-  			}
-
-  			#top img{
-  				width: 100%;
-  				vertical-align: bottom;
-   			}
 
   			#headerrogo img{
 				width: 50%;
 			}
 
 			h1{
-				color: #fff;
-			}
-
-			#consept{
-				background-image: url(../img/back6.jpg);
+				font-size: 28px;
 				text-align: center;
-				padding: 50px 0 100px;
+				margin: 70px;
 			}
 
-			#consept img{
-
-				width: 70%;
-				margin: 30px;
-			}
-
-			#easy{
+			#qa{
 				background-color: #E3E3C0;
-				padding: 50px 40px 100px;
+				
+				padding: 50px;
+				font-size: 12px;
 			}
 
-			#easy ul{
-				list-style: none;
-				padding: 0;
-				margin: 0;
-				font-size: 20px;
-				font-weight: 800;
-			}
+			form {
+  				color: #000;
+  				border: 3px solid #987409;
+  				margin: 50px 0px 50px;
+  				padding: 50px 40px 50px;
+  				background-color: rgba(255, 255, 255, 0.7);
+  				text-align: left;
+  				line-height: 20px;
+  				font-size: 20px;
+  				font-family: "Shippori Mincho", serif;
+  			}
 
-			#easy li{
-				margin: 0 0 50px;
-			}
-			#easy img{
-				width: 100%;
-			}
+  			form p {
+  				margin-bottom: 20px;
+  				font-size: 15px;
+  			}
 
-			input{
-				width: 90%;
-			}
+  			form span{
+  				color: #FF0000;
+  				font-size: 12px;
+  			}
 
+  			input {width: 90%;}
+  			textarea{
+  				width: 90%;
+  				height: 60px;
+  			}
+
+  			button{
+  				text-align: right;
+  				margin: 0 auto;
+  			}
 
 
 
@@ -83,29 +79,7 @@
 
 
 			@media screen and (min-width: 1000px){
-				main{
-					margin: -250px 34px 34px;
-				}
-
-				main h1{
-					font-size: 90px;
-					line-height: 108px;
-				}
-
-				main h2{
-					font-size: 48px;
-
-				}
-
-				#top img{
-					display: none;
-				}
-
-				section#gaiyou{
-					margin-top: 300px;
-				}
-
-
+				
 			}
 
 			@media screen and (max-width: 1000px){
@@ -114,7 +88,7 @@
 
 
 
-
+	
 
   		</style>
   		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -131,36 +105,25 @@
 		  	<span id="menu"></span>	
   		</header>
 
-  		<div id="top"><img src="../img/Group1_1.png"></div>
+  		<div id="qa">
+  			<h1>お問い合わせ</h1>
+  			<p>ご質問・ご相談・お見積り依頼など、どんな内容でもお気軽にご連絡ください。<br>通常1〜2営業日以内にご返信いたします。</p>
+  			<form>
+  				<p>お名前<span>※必須</span><br><input type="text" name="name" class="e1"></p>
+  				<p>メールアドレス<span>※必須</span><br><input type="email" name="name" class="e1"></p>
+  				<p>お問い合わせ<br><input type="text" name="name" class="e1"></p>
+  				<p>お問い合わせ内容<span>※必須</span><br><textarea name="naiyou"></textarea></p>
+  				<button type="submit" class="btn">送信</button>
+  			</form>
+  			<p>※ご記入いただいた内容は、回答のためにのみ利用  　し、第三者へ提供することはありません。</p>
 
 
-  		<div id="consept">
-  			<h1>月額500円から<br>自分の物語取り戻す旅へ</h1>
-  				<img src="../img/G14.svg">
-  				<img src="../img/G16.svg">
-  				<img src="../img/G17.svg">
-  		</div>
 
-  		<div id="easy">
-  			<ul>
-  				<li>かんたん会員登録
-  				<img src="../img/G17.png"></li>
-  				<li>外部サービスで認証
-  					<p>次のアカウントをお持ちの場合<br>簡単にアカウントを作成できます。</p>
-  				<img src="../img/G18.png"></li>
-  				<li>メールアドレスで認証
-  					<form>
-  						<p>メールアドレス<br>
-						<input type="text" name="mall" class="e1"></p></form>
-  				</li>
-  				<p>利用規約、プライバシーポリシーを承認の上、次に進んでください。</p>
-  			</ul>
   			
   		</div>
+ </body>
 
 
-
-  	</body>
 
   	<footer>
   		<div class="attention">
@@ -169,12 +132,13 @@
 		</div>
   		<nav>
   			<ul>
-  				<li class="btn"><a href="../dm/index.html">お問い合わせ</a></li>
+  				<li class="btn"><a href="../soon/index.html">お問い合わせ</a></li>
   				<li class="btn"><a href="../shitumon/index.html">よくある質問</a></li>
   				<li class="btn"><a href="../kiyaku/index.html">利用規約</a></li>
+  			</ul> 		
   		</nav>
   		<p><a href="../index.html"><img src="../img/image3.png"></a></p>
-  		<p id="sign">©︎2025 ito.sumita.nakamura</p>
+  		<p id="sign">©︎2025 ito.sumita.nakamura<p/>
   	</footer>
 
 </html>

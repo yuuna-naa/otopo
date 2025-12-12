@@ -119,12 +119,17 @@
   				color: #000;
   				border: 3px solid #FBCF00;
   				margin: 0px 50px 50px;
-  				padding: 50px 30px 50px;
+  				padding: 50px 40px 50px;
   				background-color: rgba(255, 255, 255, 0.7);
   				text-align: left;
   				line-height: 20px;
   				font-size: 20px;
   				font-family: "Shippori Mincho", serif;
+  			}
+
+  			form p {
+  				margin-bottom: 20px;
+  				font-size: 15px;
   			}
 
   			input.e1{width: 60%;}
@@ -313,6 +318,7 @@
   	</head>
 
   	<body>
+  	<div class="mobile-container">
   		<header>
   			<div id="headerrogo"><a href="index.html"><img src="img/image3.png"></a></div>
   		 	<nav>
@@ -341,7 +347,7 @@
         </p>
 
         <p>生年月日<br>
-            <input type="text" name="era" class="e2" id="era-input">年
+            <input type="number" name="era" class="e2" id="era-input">年
 
             <select name="月" id="month-select">
                 <option value="1">1</option>
@@ -426,7 +432,7 @@
 
         // もし生まれた年が空っぽだったら
         if (era === "") {
-            alert("生まれた年を入力してください！");
+            alert("生年月日を入力してください！");
             return; // 強制終了
         }
 
@@ -470,6 +476,7 @@
   			</ul> 
   			<a href="all/index.html">もっと見る</a>
   		</div>
+  	</div>
   	</body>
 
   	<footer>
@@ -479,13 +486,14 @@
 		</div>
   		<nav>
   			<ul>
-  				<li class="btn"><a href="index.html">お問い合わせ</a></li>
+  				<li class="btn"><a href="dm/index.html">お問い合わせ</a></li>
   				<li class="btn"><a href="shitumon/index.html">よくある質問</a></li>
   				<li class="btn"><a href="kiyaku/index.html">利用規約</a></li>
   			</ul> 		
   		</nav>
   		<p><a href="index.html"><img src="img/image3.png"></a></p>
-  		<p id="sign">©︎2025 ito.sumita.nakamura<p/>
+  		<p id="sign">©︎2025 ito.sumita.nakamura</p>
   	</footer>
+
 
 </html>
